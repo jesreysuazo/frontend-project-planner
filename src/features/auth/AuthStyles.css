@@ -1,0 +1,124 @@
+
+.auth-container {
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-container h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.auth-form button:disabled {
+    background-color: #7aa7e3;
+    cursor: not-allowed;
+}
+
+.auth-form button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.auth-error {
+    color: red;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.auth-redirect {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #d9534f;
+
+}
+
+.auth-redirect a {
+    color: #d9534f;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.auth-redirect a:hover {
+    color: #c12e2a;
+}
+
+.auth-success {
+    color: #28a745;
+    /* green color */
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+
+.password-field {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+
+.toggle-password {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #007bff;
+    width: 40px !important;
+    font-size: 0.5rem !important;
+    text-align: center !important;
+    padding: 5px 10px !important;
+}
+
+.toggle-password:hover {
+    color: #0056b3;
+}
+
+
+@media (max-width: 480px) {
+    .auth-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+}

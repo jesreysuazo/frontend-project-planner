@@ -1,0 +1,132 @@
+.task-list {
+    display: grid;
+    margin-top: 1rem;
+}
+
+.task-row {
+    display: grid;
+    grid-template-columns: 40px 2fr 1fr 1fr;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.task-header {
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+}
+
+.task-check {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+/* ==== BoardView Styles ==== */
+.board-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.board-column {
+    flex: 1;
+    min-height: 300px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+/* 
+.board-column.not_started {
+    background: rgba(90, 67, 214, 0.1);
+} */
+
+.board-column.in_progress {
+    background: rgba(90, 67, 214, 0.1);
+}
+
+.board-column.done {
+    background: rgba(6, 122, 111, .1);
+    /* optional yellowish for DONE or your preferred color */
+}
+
+.board-title {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.task-card {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-card-header {
+    font-weight: 600;
+    margin: 0;
+}
+
+.task-desc {
+    font-size: 0.75rem;
+    margin: 0;
+    color: #555;
+}
+
+.schedule-view-container {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fefefe;
+}
+
+.generate-schedule-button {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.generate-schedule-button:hover {
+    background-color: #0056b3;
+}
+
+.task-card {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: #fafafa;    
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.subtasks {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.subtasks ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+}
+
+.error {
+    color: red;
+    margin-top: 1rem;
+}
+
+.schedule-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

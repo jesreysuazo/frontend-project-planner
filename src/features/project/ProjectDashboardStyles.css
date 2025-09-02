@@ -1,0 +1,163 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.project-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(270deg, rgba(17, 50, 100, 1) 0%, rgba(41, 35, 61, 1) 100%);
+    color: #fff;
+}
+
+.project-logout-button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #007bff;
+    font-weight: 600;
+}
+
+.dashboard-container {
+    padding: 1rem 2rem;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.delete-project-button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    font-weight: 600;
+}
+
+.back-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #007bff;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tab-button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(17, 15, 100);
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(17, 15, 100);
+}
+
+.tab-button.active {
+    background: linear-gradient(270deg, rgba(27, 24, 186, 1) 0%, rgba(17, 15, 100, 1) 100%);
+    color: #fff;
+}
+
+.add-task-button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    font-weight: 600;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.modal-actions .confirm-delete {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cancel{
+    background: unset !important;
+    color: black !important;
+    border: 1px solid grey !important;
+}
+
+.modal-actions .confirm-delete:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.project-info-header {
+    margin-bottom: 0.5rem;
+}
+
+.member-tag {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-info-text {
+    font-size: 0.9rem;
+}
